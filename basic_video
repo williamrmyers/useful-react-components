@@ -1,0 +1,17 @@
+class BasicVideo extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
+
+    render() {
+        return(
+            <div>
+                <video className="video-container video-container-overlay" autoPlay="true" loop muted={ this.props.muted }>
+                    <source src={ this.props.introVideo } type="video/mp4" />
+                </video>
+            </div>
+        );
+    }
+}
