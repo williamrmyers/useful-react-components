@@ -1,0 +1,15 @@
+class AudioPlayer extends Component {
+
+  render () {
+    return (
+      <audio
+        className="player"
+        ref={audioTag => this.audioTag = audioTag}
+        src={this.props.url}
+        controls
+        width="100%"
+        preload="none"
+      />
+    );
+  }
+}
